@@ -2,64 +2,42 @@
 
 # Project Name
 
-> One paragraph statement about the project.
+In this project, you will build a basic website that allows users to add/remove books from a list.
 
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
+![screenshot](/images/Snapshot1.png)
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Major languages :HTML, CSS, JS
+- Frameworks :none
+- Technologies used:GIT, LUXON
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[coming soon](https://livedemo.com)
 
 
 ## Getting Started
+To get a local copy up and running follow these simple example steps:
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+Clone the repository /
+Open terminal and navigate to the downloaded / project folder /
+run npm install
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@myelin0](https://github.com/myelin0)
+- Twitter: [@Amy_Albania](https://twitter.com/Amy_albania)
+- LinkedIn: [@Emirjeta Veisllari](https://www.linkedin.com/in/emirjeta-veisllari/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/myelin0/Awesome-books-ES6/issues).
 
 ## Show your support
 
