@@ -4,7 +4,7 @@
 
 In this project, you will build a basic website that allows users to add/remove books from a list.
 
-![screenshot](/images/Snapshot1.png)
+![screenshot](/images/Snapshot.png)
 
 ## Built With
 
