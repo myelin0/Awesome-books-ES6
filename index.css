@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+body {
+  font-family: Lato, sans-serif;
+  background-color: var(--dark-whiten);
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: 2px solid black;
+  border-radius: 0;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+.book-section {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+#book-list {
+  padding: 0;
+  margin-bottom: 100px;
+}
+
+.with-border {
+  border: 2px solid black;
+}
+
+.book-section h1 {
+  font-size: 32px;
+  align-self: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.form-container h2 {
+  padding-bottom: 40px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 40px;
+  margin-top: 35px;
+}
+
+.book-section #book-list li h2 {
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.no-border {
+  border: none;
+}
+
+.book-section #book-list li button {
+  box-shadow: 0.17em 0.17em;
+  border: 2px solid black;
+  padding: 8px;
+  align-self: flex-end;
+  font-weight: bold;
+  margin-bottom: 2px;
+  height: 70%;
+}
+
+hr {
+  margin: 0;
+  width: 50%;
+  align-items: center;
+  margin-bottom: 5px;
+  border-top: 2px solid black;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+input {
+  border: 2px solid black;
+  border-radius: 2px;
+  width: 80%;
+  height: 80%;
+}
+
+#add-btn {
+  box-shadow: 0.17em 0.17em;
+  border: 2px solid black;
+  padding: 8px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  margin-top: -10px;
+  height: 70%;
+}
+
+.container {
+  padding: 5px 15px;
+  height: 93vh;
+}
+
+.nav-bar {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #000;
+  border-radius: 3px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container .nav-bar .blue {
+  color: blue;
+}
+
+.menubar {
+  display: none;
+}
+
+.container .nav-bar ul {
+  display: flex;
+}
+
+.nav-menu li {
+  list-style: none;
+}
+
+.nav-bar ul li {
+  margin: 5px;
+}
+
+.contact-container {
+  display: none;
+}
+
+.wrap-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container p {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+.contact-container ul li {
+  width: 80%;
+  list-style: disc;
+}
+
+.book-section ul li:nth-child(odd) {
+  background-color: rgb(128 128 128 / 50%);
+}
+
+#bullet-contact li {
+  width: 26rem;
+  line-height: 1.6;
+}
+
+.book-section #book-list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  padding: 10px;
+}
+
+.container .date {
+  text-align: right;
+  margin-top: 4px;
+}
+
+.form-container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+#form input[type="text"] {
+  margin-bottom: 20px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  padding: 5px;
+  width: 400px;
+  height: 40px;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+}
+
+footer {
+  box-sizing: border-box;
+  border: 2px solid #000;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 0 15px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 98%;
+}
+
+.form-btn {
+  width: 100px;
+  -ms-flex-item-align: end;
+  appearance: button;
+  background-color: #fff;
+  background-image: none;
+  border: 2px solid #000;
+  border-radius: 4px;
+  box-shadow: #000 4px 4px 0 0, #fff 4px 4px 0 1px;
+  color: #000;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 10px;
+  overflow: visible;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form-btn:focus {
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+}
+
+.form-btn:hover {
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+}
+
+.form-btn:active {
+  box-shadow: rgb(0 0 0 / 12.5%) 0 3px 5px inset;
+  outline: 0;
+}
+
+.form-btn:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}

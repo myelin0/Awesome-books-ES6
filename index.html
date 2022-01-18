@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="index.css">
+
+    <title>ES6_Awesome_books</title>
+</head>
+
+<body>
+
+    <main class="container">
+        <nav class="nav-bar">
+            <div class="mobile">
+                <a href="#" class="logo">Awesome Books</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#awesome-books" class="books">List |</a></li>
+                <li><a href="#form" class="create">Add new |</a></li>
+                <li><a href="#contact" class="contact">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="date">Time goes here...</p>
+        <div class="main-books">
+            <section class="book-section" id="awesome-books">
+                <h1>All awesome books</h1>
+                <ul id="book-list">
+
+                </ul>
+            </section>
+        </div>
+        <section class="form-container">
+            <h2>Add a new book</h2>
+            <form id="form" action="#">
+                <input type="text" id="title" placeholder="Title"> <br>
+                <input type="text" id="author" placeholder="Author"> <br>
+                <small class="err-msg"></small><br>
+                <button type="submit" class="add-btn form-btn">Add</button>
+            </form>
+        </section>
+
+        <section id="contact" class="contact-container f">
+            <div class="wrap-contact">
+                <h2>Contact Information</h2>
+                <p>Do you have questions or you just want to say "Hello"? <span>You can reach out to us!</span></p>
+                <ul id="bullet-contact">
+                    <li>Our e-mail mail@mail.com</li>
+                    <li>Our phone number 00355672543210</li>
+                    <li>Our address: Tribecca avenue 33, 554 ring road, NY.</li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <span>Copyright &copy;</span>
+            <span>Developed by Emirjeta Veisllari</span>
+        </footer>
+    </main>
+    <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
+    <script type="module" src="/modules/js/index.js"></script>
+</body>
+
+</html>
