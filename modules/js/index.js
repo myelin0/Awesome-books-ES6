@@ -1,14 +1,24 @@
-/* eslint-disable no-restricted-globals */
-/*  eslint linebreak-style: ["error", "unix"]   */
-/* eslint-disable no-undef */
 import { printErrorMsg, addBtn } from './utils.js';
 
 let books = JSON.parse(localStorage.getItem('books'));
+// const addBtn = document.querySelector(".add-btn");
+// const bookList = document.querySelector('#book-list');
+
+// const printErrorMsg = (message) => {
+//   const errMsg = document.querySelector(".err-msg");
+//   errMsg.style.color = "red";
+//   document.querySelector(".err-msg").textContent = message;
+//   setTimeout(() => {
+//     document.querySelector(".err-msg").textContent = "";
+//   }, 2000);
+// };
 
 function dT() {
+  // eslint-disable-next-line no-undef
   const now = luxon.DateTime.now();
   const currentTime = document.querySelector('.date');
   currentTime.innerHTML = now.toLocaleString(
+    // eslint-disable-next-line no-undef
     luxon.DateTime.DATETIME_FULL_WITH_SECONDS,
   );
 }
@@ -22,29 +32,29 @@ class Book {
     this.author = author;
   }
 
-  addBook() {
-    const { id, title, author } = this;
-    const bookObj = { id, title, author };
-    books = JSON.parse(localStorage.getItem('books'));
-    if (title === '' || author === '') {
-      printErrorMsg('Please fill in all the fields');
-    } else if (books !== null) {
-      books.push(bookObj);
-      localStorage.setItem('books', JSON.stringify(books));
-      books = JSON.parse(localStorage.getItem('books'));
-      document.getElementById('title').value = '';
-      document.getElementById('author').value = '';
-    } else {
-      books = [];
-      books.push(bookObj);
-      localStorage.setItem('books', JSON.stringify(books));
-      books = JSON.parse(localStorage.getItem('books'));
-      document.getElementById('title').value = '';
-      document.getElementById('author').value = '';
-    }
-  }
+   addBook = () => {
+     const { id, title, author } = this;
+     const bookObj = { id, title, author };
+     books = JSON.parse(localStorage.getItem('books'));
+     if (title === '' || author === '') {
+       printErrorMsg('Please fill in all the fields');
+     } else if (books !== null) {
+       books.push(bookObj);
+       localStorage.setItem('books', JSON.stringify(books));
+       books = JSON.parse(localStorage.getItem('books'));
+       document.getElementById('title').value = '';
+       document.getElementById('author').value = '';
+     } else {
+       books = [];
+       books.push(bookObj);
+       localStorage.setItem('books', JSON.stringify(books));
+       books = JSON.parse(localStorage.getItem('books'));
+       document.getElementById('title').value = '';
+       document.getElementById('author').value = '';
+     }
+   }
 
-  removeBook() {
+  removeBook = () => {
     const { id } = this;
     books = books.filter((book) => {
       if (book.id !== id) {
@@ -66,6 +76,7 @@ const displayBook = (id, title, author) => {
   removeBookBtn.textContent = 'Remove';
   li.appendChild(removeBookBtn);
   bookList.appendChild(li);
+
   removeBookBtn.addEventListener('click', () => {
     const book = new Book(id, title, author);
     id = removeBookBtn.id;
@@ -141,24 +152,24 @@ contact.addEventListener('click', () => {
 });
 
 // date
-const months = [
-  'January',
-  'February',
-  'March',
-  'April',
-  'May',
-  'June',
-  'July',
-  'August',
-  'September',
-  'October',
-  'November',
-  'December',
-];
-const currentDate = new Date();
-const date = ` ${
-  months[currentDate.getMonth()]
-} ${currentDate.getDate()} ${currentDate.getFullYear()}`;
-const time = currentDate.toLocaleTimeString();
-const websiteDate = document.querySelector('.date');
-websiteDate.innerHTML = `${date} ${time}`;
+// const months = [
+//   'January',
+//   'February',
+//   'March',
+//   'April',
+//   'May',
+//   'June',
+//   'July',
+//   'August',
+//   'September',
+//   'October',
+//   'November',
+//   'December',
+// ];
+// const currentDate = new Date();
+// const date = ` ${
+//   months[currentDate.getMonth()]
+// } ${currentDate.getDate()} ${currentDate.getFullYear()}`;
+// const time = currentDate.toLocaleTimeString();
+// const websiteDate = document.querySelector('.date');
+// websiteDate.innerHTML = `${date} ${time}`;
