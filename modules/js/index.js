@@ -1,17 +1,6 @@
 import { printErrorMsg, addBtn } from './utils.js';
 
 let books = JSON.parse(localStorage.getItem('books'));
-// const addBtn = document.querySelector(".add-btn");
-// const bookList = document.querySelector('#book-list');
-
-// const printErrorMsg = (message) => {
-//   const errMsg = document.querySelector(".err-msg");
-//   errMsg.style.color = "red";
-//   document.querySelector(".err-msg").textContent = message;
-//   setTimeout(() => {
-//     document.querySelector(".err-msg").textContent = "";
-//   }, 2000);
-// };
 
 function dT() {
   // eslint-disable-next-line no-undef
@@ -150,26 +139,3 @@ contact.addEventListener('click', () => {
   bookLists.classList.remove('blue');
   addNewBook.classList.remove('blue');
 });
-
-// date
-// const months = [
-//   'January',
-//   'February',
-//   'March',
-//   'April',
-//   'May',
-//   'June',
-//   'July',
-//   'August',
-//   'September',
-//   'October',
-//   'November',
-//   'December',
-// ];
-// const currentDate = new Date();
-// const date = ` ${
-//   months[currentDate.getMonth()]
-// } ${currentDate.getDate()} ${currentDate.getFullYear()}`;
-// const time = currentDate.toLocaleTimeString();
-// const websiteDate = document.querySelector('.date');
-// websiteDate.innerHTML = `${date} ${time}`;
