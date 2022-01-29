@@ -14,7 +14,7 @@ In this project, you will build a basic website that allows users to add/remove 
 
 ## Live Demo
 
-[coming soon](https://livedemo.com)
+[Awesome-Books](https://myelin0.github.io/Awesome-books-ES6/)
 
 
 ## Getting Started
